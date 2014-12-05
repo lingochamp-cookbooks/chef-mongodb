@@ -64,6 +64,8 @@ default[:mongodb][:is_configserver] = nil
 
 default[:mongodb][:reload_action] = 'restart' # or "nothing"
 
+default[:mongodb][:source_root_url] = 'http://downloads-distro.mongodb.org'
+
 case node['platform_family']
 when 'freebsd'
   default[:mongodb][:package_name] = 'mongo-10gen-server'
